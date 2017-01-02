@@ -17,14 +17,3 @@ select Rfid.  This will add a corresponding line to the top of your sketch:
 #include <Rfid.h>
 
 To stop using this library, delete that line from your sketch.
-
-Geeky information:
-After a successful build of this library, a new file named "Rfid.o" will appear
-in "Arduino/lib/targets/libraries/Positron/Rfid". This file is the built/compiled library
-code.
-
-If you choose to modify the code for this library (i.e. "Rfid.cpp" or "Rfid.h"),
-then you must first 'unbuild' this library by deleting the "Test.o" file. The
-new "Test.o" with your code will appear after the next press of "verify"
-
-
