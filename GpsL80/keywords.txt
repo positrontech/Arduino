@@ -1,0 +1,43 @@
+#######################################
+# Syntax Coloring Map For Test
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+SIM800 KEYWORD1
+GprsSim800 KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+monitor KEYWORD2
+call KEYWORD2
+sms KEYWORD2
+monitor KEYWORD2
+init KEYWORD2
+gprs KEYWORD2
+gprs KEYWORD2
+http KEYWORD2
+tcp KEYWORD2
+send KEYWORD2
+
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+CONNECT LITERAL1
+DISCONNECT LITERAL1
+CONNECTED LITERAL1
+DISCONNECTED LITERAL1
+SENT LITERAL1
+FAILED LITERAL1
+TCP LITERAL1
+HTTP LITERAL1
+
