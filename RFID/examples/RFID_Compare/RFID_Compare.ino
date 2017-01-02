@@ -2,12 +2,14 @@
 #include <Rfid.h>
 
 Rfid RFID(2);    //To initialize RFID at PIN 2
+int RFID_OK=12;
+int RFID_NOK=13;
 
 void setup() 
 {
   Serial.begin(9600);      	//Initialize Hardware Serial to check RFID Data
-  pinMode(12,OUTPUT);	   	//Card Match LED
-  pinMode(13,OUTPUT);		//Card Mismatch LED
+  pinMode(RFID_OK,OUTPUT);	   	//Card Match LED
+  pinMode(RFID_NOK,OUTPUT);		//Card Mismatch LED
   digitalWrite(12,LOW);		
   digitalWrite(13,LOW);
 }
@@ -20,14 +22,14 @@ void loop()
   {
     if(RFID.cmp(str,"Write Your Card Number Here")==true)	//If Read Card Matches
     {
-      digitalWrite(13,LOW);
-      digitalWrite(12,HIGH);
+      digitalWrite(RFID_NOK,LOW);
+      digitalWrite(RFID_OK,HIGH);
       Serial.println("Match");
     }
     else
     {
-      digitalWrite(12,LOW);
-      digitalWrite(13,HIGH);
+      digitalWrite(RFID_OK,LOW);
+      digitalWrite(RFID_NOK,HIGH);
       Serial.println("Mis-Match");
     }
   }  
