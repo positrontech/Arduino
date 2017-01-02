@@ -13,6 +13,5 @@ void loop()
   String str=RFID.read();  //Read RFID Card
     
   if(str!="")
-    Serial.println(str);  //Print RFID Card Number on Serial
-  
+    Serial.println(str);  //Print RFID Card Number on Serial  
 }
